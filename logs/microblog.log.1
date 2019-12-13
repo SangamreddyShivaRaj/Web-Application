@@ -1,0 +1,1491 @@
+2019-12-12 21:23:02,042 ERROR: Exception on /index [GET] [in c:\users\shiva\webblog\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\shiva\webblog\app\routes.py", line 39, in index
+    prev_url=prev_url)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\shiva\webblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\environment.py", line 1005, in render
+    return concat(self.root_render_func(self.new_context(vars)))
+  File "C:\Users\shiva\webblog\app\templates\index.html", line 14, in root
+    <ul class="pager">
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\index.html", line 50, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 43, in block_app_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 17, in root
+    </table>
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block_doc
+    {% block body -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 39, in block_html
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 92, in block_body
+  File "C:\Users\shiva\webblog\app\templates\base.html", line 80, in block_content
+  File "C:\Users\shiva\webblog\app\templates\_post.html", line 36, in block_app_content
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\runtime.py", line 262, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\runtime.py", line 570, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\asyncsupport.py", line 110, in _invoke
+    return original_invoke(self, arguments, autoescape)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\runtime.py", line 574, in _invoke
+    rv = self._func(*arguments)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\wtf.html", line 495, in macro
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\runtime.py", line 262, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\runtime.py", line 570, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\asyncsupport.py", line 110, in _invoke
+    return original_invoke(self, arguments, autoescape)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\runtime.py", line 574, in _invoke
+    rv = self._func(*arguments)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\wtf.html", line 200, in macro
+    {{ form.hidden_tag() }}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\runtime.py", line 262, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\runtime.py", line 570, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\asyncsupport.py", line 110, in _invoke
+    return original_invoke(self, arguments, autoescape)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\runtime.py", line 574, in _invoke
+    rv = self._func(*arguments)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\wtf.html", line 85, in macro
+    {% else -%}
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\runtime.py", line 262, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\runtime.py", line 570, in __call__
+    return self._invoke(arguments, autoescape)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\asyncsupport.py", line 110, in _invoke
+    return original_invoke(self, arguments, autoescape)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\runtime.py", line 574, in _invoke
+    rv = self._func(*arguments)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\wtf.html", line 195, in macro
+    "
+  File "c:\users\shiva\webblog\venv\lib\site-packages\jinja2\runtime.py", line 262, in call
+    return __obj(*args, **kwargs)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\wtforms\fields\core.py", line 155, in __call__
+    return self.meta.render_field(self, kwargs)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\wtforms\meta.py", line 56, in render_field
+    return field.widget(field, **render_kw)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\wtforms\widgets\core.py", line 283, in __call__
+    return super(SubmitInput, self).__call__(field, **kwargs)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\wtforms\widgets\core.py", line 182, in __call__
+    if 'required' not in kwargs and 'required' in getattr(field, 'flags', []):
+  File "c:\users\shiva\webblog\venv\lib\site-packages\wtforms\fields\core.py", line 371, in __contains__
+    return getattr(self, name)
+  File "c:\users\shiva\webblog\venv\lib\site-packages\wtforms\fields\core.py", line 366, in __getattr__
+    if name.startswith('_'):
+RecursionError: maximum recursion depth exceeded while calling a Python object
