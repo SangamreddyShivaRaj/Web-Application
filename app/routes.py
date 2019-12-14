@@ -52,6 +52,12 @@ def explore():
     return render_template('index.html', title='Explore', posts=posts.items,
                            next_url=next_url, prev_url=prev_url)
 
+@app.route('/bloggers')
+@login_required
+def bloggers():
+    users = User.query.all()
+    #page = request.args.get('page', 1, type=int)
+    return render_template('bloggers.html', title='Bloggers',users=users)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
